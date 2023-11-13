@@ -1,0 +1,7 @@
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\bin\Debug\Opgave02.exe.config
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\bin\Debug\Opgave02.exe
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\bin\Debug\Opgave02.pdb
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\obj\Debug\Opgave02.csproj.AssemblyReference.cache
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\obj\Debug\Opgave02.csproj.CoreCompileInputs.cache
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\obj\Debug\Opgave02.exe
+C:\Code Folder\S1\Console\VariablerOgDatatyper\Opgave02\obj\Debug\Opgave02.pdb
