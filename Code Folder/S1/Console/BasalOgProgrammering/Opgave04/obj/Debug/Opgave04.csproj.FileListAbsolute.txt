@@ -1,0 +1,7 @@
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\bin\Debug\Opgave04.exe.config
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\bin\Debug\Opgave04.exe
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\bin\Debug\Opgave04.pdb
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\obj\Debug\Opgave04.csproj.AssemblyReference.cache
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\obj\Debug\Opgave04.csproj.CoreCompileInputs.cache
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\obj\Debug\Opgave04.exe
+C:\Code Folder\S1\Console\BasalOgProgrammering\Opgave04\obj\Debug\Opgave04.pdb
