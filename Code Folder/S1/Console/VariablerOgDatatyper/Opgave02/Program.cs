@@ -13,7 +13,6 @@ namespace Opgave02
 
 
             // Variables
-
             byte Byte = 255;
 
             sbyte Sbyte = -128;
@@ -36,8 +35,8 @@ namespace Opgave02
 
             decimal Decimal = 345435436534245324;
 
-            // Printing
 
+            // Printing
             Console.WriteLine(Byte);
             Console.WriteLine(Sbyte);
             Console.WriteLine(Short);
@@ -49,6 +48,9 @@ namespace Opgave02
             Console.WriteLine(Float);
             Console.WriteLine(Double);
             Console.WriteLine(Decimal);
+
+
+
 
 
 
@@ -64,9 +66,11 @@ namespace Opgave02
 
 
 
-            // Min Value & Max Value
 
-            Console.WriteLine($"Byte Min:{byte.MinValue}  Max:{byte.MaxValue}");
+
+
+            // Min Value & Max Value
+            Console.WriteLine($"Byte min:{byte.MinValue}, max:{byte.MaxValue}");
             Console.WriteLine($"Sbyte min:{sbyte.MinValue}, max:{sbyte.MaxValue}");
             Console.WriteLine($"Short min:{short.MinValue}, max:{short.MaxValue}");
             Console.WriteLine($"Ushort min:{ushort.MinValue}, max:{ushort.MaxValue}");
@@ -79,6 +83,41 @@ namespace Opgave02
             Console.WriteLine($"Decimal min:{decimal.MinValue}, max:{decimal.MaxValue}");
 
 
+
+            // Spacing
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+
+
+
+
+
+
+
+            //Math.PI
+
+            float floatPI = 69;
+            double doublePI = 420.32;
+            decimal decimalPI = 420;
+
+            floatPI = (float)Math.PI;
+            doublePI = (double)Math.PI;
+            decimalPI = (decimal)Math.PI;
+
+            Console.WriteLine(floatPI);
+            Console.WriteLine(doublePI);
+            Console.WriteLine(decimalPI);
+
+
+
+
+            // Readline for at den ikke lukker med det samme
             Console.ReadLine();
         }
     }
