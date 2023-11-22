@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Opgave04
 {
@@ -123,7 +119,7 @@ namespace Opgave04
             char gender;
 
             Console.Write("Indtast din højde i meter: ");
-            double.TryParse (Console.ReadLine(), out height);
+            double.TryParse(Console.ReadLine(), out height);
 
             Console.Write("Indtast din vægt i kilo: ");
             double.TryParse(Console.ReadLine(), out dblWeight);
@@ -135,15 +131,15 @@ namespace Opgave04
             double BMI = weight / ((height / 100) * (height / 100));
             Console.WriteLine($"BMI: {BMI}");
 
-            if ( BMI < 18.5 && BMI > 5)
+            if (BMI < 18.5 && BMI > 5)
             {
                 Console.WriteLine("Du er undervægtig");
             }
-            else if ( BMI < 5 )
+            else if (BMI < 5)
             {
                 Console.WriteLine("Du er en mus");
             }
-            else if ( BMI >= 18.5 && BMI <= 25)
+            else if (BMI >= 18.5 && BMI <= 25)
             {
                 Console.WriteLine("Du er normalvægtig");
             }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Opgave03
 {
@@ -37,7 +33,7 @@ namespace Opgave03
             string inputThree = Console.ReadLine().ToLower();
 
             Console.Write("Indtast navneord: ");
-            string inputFour  = Console.ReadLine().ToLower();
+            string inputFour = Console.ReadLine().ToLower();
 
             if (inputOne == "succes" & inputTwo == "hører" & inputThree == "fede" & inputFour == "musik")
             {
@@ -54,9 +50,9 @@ namespace Opgave03
                 Console.WriteLine($"Og det {inputTwo} til");
                 Console.WriteLine($"Masser af {inputThree} spotlights");
                 Console.WriteLine($"Privatliv og {inputFour}");
-                   
+
             }
-              
+
 
 
 

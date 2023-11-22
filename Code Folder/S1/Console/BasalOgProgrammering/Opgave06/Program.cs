@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Security.Policy;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Opgave06
 {
@@ -17,15 +11,10 @@ namespace Opgave06
         }
         static void Main(string[] args)
         {
-            bool done = false;
-
-            
-
             //6.3
             //Denne opgave består af den while loop der omringer koden
             while (Globals.menuChoice != 1)
             {
-
                 Console.Clear();
 
                 MethodChoice();
@@ -37,55 +26,30 @@ namespace Opgave06
                 else if (Globals.menuChoice == 2)
                 {
                     DontLie();
-                    Console.WriteLine("\n\nPress anything to return to menu");
-                    Console.ReadKey();
+                    Return();
                 }
                 else if (Globals.menuChoice == 3)
                 {
                     Repeater();
-                    Console.WriteLine("\n\nPress anything to return to menu");
-                    Console.ReadKey();
+                    Return();
                 }
                 else if (Globals.menuChoice == 4)
                 {
-                    birthday();
-                    Console.WriteLine("\n\nPress anything to return to menu");
-                    Console.ReadKey();
+                    Birthday();
+                    Return();
                 }
                 else if (Globals.menuChoice == 5)
                 {
-                    //Call method here
-                    Console.WriteLine("\n\nPress anything to return to menu");
-                    Console.ReadKey();
+                    Division();
+                    Return();
                 }
                 else
                 {
                     Console.WriteLine("\n\n<<<<<<<<<<<<ERROR>>>>>>>>>>>>>>>");
-                    Console.WriteLine("Press anything to return to menu");
-                    Console.ReadKey();
+                    Return();
                 }
-
-                
-
-
-
             }
-
-
-            dontEnd();
-        }
-
-        static void DontLie()
-        {
-            //6.2
-            int counter = 1;
-
-            while (counter <= 6)
-            {
-                Console.WriteLine("Jeg må ikke lyve");
-                counter++;
-            }
-            Console.ReadKey();
+            DontEnd();
         }
 
         static void MethodChoice()
@@ -98,11 +62,26 @@ namespace Opgave06
                 "1: Exit Program\n" +
                 "2: DontLie()\n" +
                 "3: Repeater()\n" +
-                "4: Birthday()");
+                "4: Birthday()\n" +
+                "5. Division()");
             Console.Write("Indtast et tal: ");
             double.TryParse(Console.ReadLine(), out dblParse);
             Globals.menuChoice = Convert.ToInt32(dblParse);
             Console.Clear();
+        }
+
+
+        static void DontLie()
+        {
+            //6.2
+            int counter = 1;
+
+            while (counter <= 6)
+            {
+                Console.WriteLine("Jeg må ikke lyve");
+                counter++;
+            }
+            Console.ReadKey();
         }
 
         static void Repeater()
@@ -124,86 +103,112 @@ namespace Opgave06
                 Thread.Sleep(50);
                 counter++;
             }
-        }    
-        
-        static void birthday()
+        }
+
+
+        static void Birthday()
         {
-            //6.8
-            bool genderChosen = false;
-            bool ageChosen = false;
-            string gender = "N/A";
-            int age = 0;
-            
+            Console.Write("Indtast dit køn (K / M): ");
+            string gender = Console.ReadLine();
+            Console.Write("\nAlder?: ");
 
-            Console.WriteLine("||| Fødselsdagsoptæller |||");
-            while (genderChosen == false)
+            if (int.TryParse(Console.ReadLine(), out int age))
             {
-                Console.Write("Indtast køn (M/K): ");
-                gender = Console.ReadLine().ToLower();
-
-                if (gender == "m")
-                {
-                    genderChosen = true;
-                }
-                else if (gender == "k")
-                {
-                    genderChosen = true;
-
-                }
-                else
-                {
-                    Console.WriteLine("\n\n<<<<<<<<<<<<ERROR>>>>>>>>>>>>>>>");
-                    Console.WriteLine("Dit input var ugyldigt, prøv igen.");
-                    Console.ReadKey();
-                }
-            }
-            while (ageChosen == false)
-            {
-                Console.Write("Indtast alder: ");
-                if (int.TryParse(Console.ReadLine(), out age))
-                {
-                    ageChosen = true;
-                }
-                else
-                {
-                    Console.WriteLine("\n\n<<<<<<<<<<<<ERROR>>>>>>>>>>>>>>>");
-                    Console.WriteLine("Dit input var ugyldigt, prøv igen.");
-                }
-            }
-
-            if (gender == "m")
-            {
-                if (age == 1)
-                {
-                    Console.WriteLine("Han blev 1 år, HURRRAAA....");
-                }
-                else
-                {
-                    int counter = 1;
-                    if (counter == 1)
-                    {
-                        Console.WriteLine("Han blev 1 år, hurra,");
-                        counter++;
-                    }
-                    else if (counter == age)
-                    {
-                        Console.WriteLine($"og han blev {counter} år, HURRRAAAAAAAAAAA...");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"og han blev {counter} år, hurra,");
-                        counter++;
-                    }
-                }
-
+                RepeatBirthdate(age, gender);
             }
             else
             {
-                Console.WriteLine(">><<<UNKNOWN ERROR>>><<");
+                Console.WriteLine("Du inputtede ikke et tal som alder.");
+            }
+        }
+        static void RepeatBirthdate(int age, string gender)
+        {
+            if (gender == "m" || gender == "M")
+            {
+                gender = "Han";
+            }
+            else if (gender == "k" || gender == "K")
+            {
+                gender = "Hun";
+            }
+            else
+            {
+                gender = "Hen";
+            }
+
+            int i = 1;
+            Console.WriteLine($"{gender} blev {i}, hurra!");
+            gender = gender.ToLower();
+            for (i = 2; i < age + 1; i++)
+            {
+                Console.WriteLine($"og {gender} blev {i}, hurra!");
             }
         }
 
-        static void dontEnd()
+        static void Division()
+        {
+            //6.9
+            int input1 = 0;
+            int input2 = 0;
+            bool tal1 = false;
+            bool tal2 = false;
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("******************************");
+            Console.WriteLine("* Division ved hjælp af plus *");
+            Console.WriteLine("******************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            while (tal1 == false)
+            {
+                Console.Write("\nIndtast tallet der skal divideres: ");
+                if (int.TryParse(Console.ReadLine(), out input1))
+                {
+                    tal1 = true;
+                }
+                else
+                {
+                    Console.WriteLine("Dit input skal være et helt tal");
+                }
+            }
+            while (tal2 == false)
+            {
+                Console.Write("Indtast tallet som der skal divideres med: ");
+                if (int.TryParse(Console.ReadLine(), out input2))
+                {
+                    tal2 = true;
+                }
+                else
+                {
+                    Console.WriteLine("Dit input skal være et helt tal");
+                }
+            }
+
+            int times = 0;
+            int calculator = input2;
+
+            while (calculator <= input1)
+            {
+                times++;
+                calculator = calculator + input2;
+            }
+
+            int res = input1 - (calculator - input2);
+
+            Console.WriteLine($"\n{input2} går op i {input1} {times} gange med {res} i rest");
+
+
+
+
+        }
+
+        static void Return()
+        {
+            Console.WriteLine("\n\nPress anything to return to menu");
+            Console.ReadKey();
+        }
+
+        static void DontEnd()
         {
             Console.WriteLine();
             Console.WriteLine("Press anything to close the program...");
@@ -211,3 +216,5 @@ namespace Opgave06
         }
     }
 }
+
+
