@@ -81,7 +81,6 @@ namespace Opgave06
                 Console.WriteLine("Jeg må ikke lyve");
                 counter++;
             }
-            Console.ReadKey();
         }
 
         static void Repeater()
@@ -194,7 +193,6 @@ namespace Opgave06
             }
 
             int res = input1 - (calculator - input2);
-
             Console.WriteLine($"\n{input2} går op i {input1} {times} gange med {res} i rest");
 
 
