@@ -1,0 +1,7 @@
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\bin\Debug\Opgave03.exe.config
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\bin\Debug\Opgave03.exe
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\bin\Debug\Opgave03.pdb
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\obj\Debug\Opgave03-04.csproj.AssemblyReference.cache
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\obj\Debug\Opgave03-04.csproj.CoreCompileInputs.cache
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\obj\Debug\Opgave03.exe
+C:\Code Folder\S1\Console\KlasserIC#\Opgave03\obj\Debug\Opgave03.pdb
