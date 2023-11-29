@@ -1,0 +1,7 @@
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\bin\Debug\Opgave16.3.exe.config
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\bin\Debug\Opgave16.3.exe
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\bin\Debug\Opgave16.3.pdb
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\obj\Debug\Opgave16.3.csproj.AssemblyReference.cache
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\obj\Debug\Opgave16.3.csproj.CoreCompileInputs.cache
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\obj\Debug\Opgave16.3.exe
+C:\Code Folder\S1\Console\EX16Objects\Opgave16.3\obj\Debug\Opgave16.3.pdb
