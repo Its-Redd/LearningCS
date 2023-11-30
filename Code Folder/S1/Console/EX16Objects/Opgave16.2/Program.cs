@@ -1,9 +1,6 @@
-﻿using System;
+﻿using CarHandler;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CarHandler;
 
 namespace Opgave16._2
 {
@@ -20,7 +17,7 @@ namespace Opgave16._2
             Car car3 = new Car("Volkswagen", "Golf", 2015, "White");
             Car car4 = new Car("Ford", "Focus", 2018, "Blue");
             Car car5 = new Car("Ford", "Mondeo", 2017, "Green");
-            
+
             // Add cars to list
             cars.Add(car1);
             cars.Add(car2);
