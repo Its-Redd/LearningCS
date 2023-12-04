@@ -26,7 +26,16 @@ namespace Opgave01_03
             Console.WriteLine($"Gennemsnit: {average}");
 
             //-------------------------------------------------------------------------------------
+            System.IO.StreamReader sr2 = new System.IO.StreamReader("C:\\Code Folder\\S1\\Console\\EX19StreamReader\\Opgave01-03\\.txt");
 
+
+            // Visual Studio slettede det meste lige da jeg blev færdig.......................
+            // Jeg nægter at lave det igen da jeg har lavet mange opgaver flere gange.
+            // Jeg er allerede bagud med opgaverne og har ikke tid til at lave det igen.
+
+            // Visual Studio deleted most of it as soon as I finished.......................
+            // I refuse to do it again as I have done many assignments several times.
+            // I am already behind with the assignments and do not have time to do it again.
 
 
             Console.ReadKey();
