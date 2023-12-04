@@ -1,0 +1,7 @@
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\bin\Debug\Opgave01-03.exe.config
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\bin\Debug\Opgave01-03.exe
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\bin\Debug\Opgave01-03.pdb
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\obj\Debug\Opgave01-03.csproj.AssemblyReference.cache
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\obj\Debug\Opgave01-03.csproj.CoreCompileInputs.cache
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\obj\Debug\Opgave01-03.exe
+C:\Code Folder\S1\Console\EX19StreamReader\Opgave01-03\obj\Debug\Opgave01-03.pdb
