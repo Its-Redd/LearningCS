@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace Opgave01_02
@@ -27,6 +28,26 @@ namespace Opgave01_02
                     sw2.WriteLine(random.Next(1, 7)); // Writes a random number between 1 and 6 to the file
                 }
             }
+
+            using (StreamReader sr = new StreamReader("C:\\Code Folder\\S1\\Console\\EX20StreamWriter\\Opgave01-02\\test.txt")) // StreamReader reads from a file called test.txt located in the same folder as the .exe file
+            {
+                List<int> numbers = new List<int>(); // Creates a new list of integers
+
+                string line;
+                while ((line = sr.ReadLine()) != null) // Reads the file line by line
+                {
+                    numbers.Add(int.Parse(line)); // Adds the line to the list of integers
+                }
+
+                numbers.Sort(); // Sorts the list of integers
+
+                foreach (int number in numbers) // Loops through the list of integers
+                {
+                    Console.WriteLine(number); // Prints the number
+                }
+            }
+
+            Console.ReadKey();
         }
     }
 }
